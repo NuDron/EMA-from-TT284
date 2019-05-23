@@ -31,11 +31,12 @@
             </ul>
         </nav>
         <!--        fieldset-->
+		<form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form1" name="form1">
         <fieldset>
             <h1>Add Walking Event</h1>
             <!--            hidden field-->
             <div class="hidden">
-                <input id="prodId" name="prodId" type="hidden" value="12345678-09ab-1111-cdef">
+                <input id="sessionID" name="sessionID" type="hidden" value="12345678-09ab-1111-cdef">
             </div>
             <div class="form">
                 <label for="name">Name: </label>
@@ -48,6 +49,44 @@
                 <label for="start_time">Start Time: </label>
                 <input id="start_time" name="start_time" type="text" placeholder="HH:MM">
             </div>
+            <div class="form">
+                <label for="meeting_point">Meeting Point: </label>
+                <input id="meeting_point" name="meeting_point" type="text" placeholder="please insert a meeting point">
+            </div>
+            <div class="textarea">
+                <label>Notes: </label>
+                <textarea name="notes" rows="12" cols="50" placeholder="enter text for notes here"></textarea>
+            </div>
+            <div class="status">
+                <label>Status: </label>
+                <select id="status" name="status">
+                    <option>Pick status from prefined list</option>
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Outside person</option>
+                </select>
+            </div>
+            <div class="add">
+                <button type="submit" formmethod="get">Add event</button>
+            </div>
+        </fieldset>
+		</form>
+        <!--        footer-->
+        <footer>
+            <div class="about">
+                <h2>About us</h2>
+                <div class="club"><img src="img/logo.jpg" alt="club logo"></div>
+            </div>
+            <div class="links">
+                <h2>Useful links</h2>
+                <a href="#">Links menu</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
             <div class="form">
                 <label for="meeting_point">Meeting Point: </label>
                 <input id="meeting_point" name="meeting_point" type="text" placeholder="please insert a meeting point">
