@@ -1,53 +1,90 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2A</title>
+    <link rel="stylesheet" href="q2a.css">
+</head>
 
+<body>
 
-    
-    
-    
-    
-
-
-<div>
-
-    <div>
-        
-        
-            <div><img alt="walking club logo"></div>
-            <div>
+    <div class="wrap">
+        <!--       header-->
+        <header>
+            <div class="logo"><img src="img/logo.jpg" alt="walking club logo"></div>
+            <div class="user">
                 <p>User name displayed<p>
-            </p></p></div>
-        
-        
-        
+            </div>
+        </header>
+        <!--        nav-->
+        <nav>
             <ul>
-                <li><a href="#0.1_">Home</a></li>
-                <li><a href="#0.1_">Events</a></li>
-                <li><a href="#0.1_">News</a></li>
-                <li><a href="#0.1_">Results</a></li>
-                <li><a href="#0.1_">Contact us</a></li>
-                <li><a href="#0.1_">Settings</a></li>
-                <li><a href="#0.1_">Admin Site</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Admin Site</a></li>
             </ul>
-        
-        
+        </nav>
+        <!--        fieldset-->
         <fieldset>
             <h1>Add Walking Event</h1>
-            <div>
-                <label>Name: </label>
-                <input name="name" type="text">
+            <!--            hidden field-->
+            <div class="hidden">
+                <input id="prodId" name="prodId" type="hidden" value="12345678-09ab-1111-cdef">
             </div>
-            <div>
-                <label>Date: </label>
-                <input name="date" type="date">
+            <div class="form">
+                <label for="name">Name: </label>
+                <input id="name" name="name" type="text" placeholder="user name of event">
             </div>
-            <div>
-                <label>Start Time: </label>
-                <input name="start_time" type="text">
+            <div class="form">
+                <label>Date: <input type="date"></label>
             </div>
-            <div>
-                <label>Meeting Point: </label>
-                <input name="meeting_point" type="time">
+            <div class="form">
+                <label for="start_time">Start Time: </label>
+                <input id="start_time" name="start_time" type="text" placeholder="HH:MM">
+            </div>
+            <div class="form">
+                <label for="meeting_point">Meeting Point: </label>
+                <input id="meeting_point" name="meeting_point" type="text" placeholder="please insert a meeting point">
+            </div>
+            <div class="textarea">
+                <label>Notes: </label>
+                <textarea name="notes" rows="12" cols="50" placeholder="enter text for notes here"></textarea>
+            </div>
+            <div class="status">
+                <label>Status: </label>
+                <select>
+                    <option>pick status from prefined list</option>
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Outside person</option>
+                </select>
+            </div>
+            <div class="add">
+                <button>Add event</button>
+            </div>
+        </fieldset>
+        <!--        footer-->
+        <footer>
+            <div class="about">
+                <h2>About us</h2>
+                <div class="club"><img src="img/logo.jpg" alt="club logo"></div>
+            </div>
+            <div class="links">
+                <h2>Useful links</h2>
+                <a href="#">Links menu</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
             </div>
             <div>
                 <label>Notes: </label>
