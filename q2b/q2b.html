@@ -19,12 +19,25 @@
             </div>
             <div class="logo"><img src="img/logo.jpg" alt="walking club logo"></div>
         </header>
+		<!--        nav-->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Admin Site</a></li>
+            </ul>
+        </nav>
         <!--        fieldset-->
+		<form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form1" name="form1">
         <fieldset>
             <h1>Add Walking Event</h1>
             <!--            hidden field-->
             <div class="hidden">
-                <input id="prodId" name="prodId" type="hidden" value="12345678-09ab-1111-cdef">
+                <input id="sessionID" name="sessionID" type="hidden" value="12345678-09ab-1111-cdef">
             </div>
             <div class="form">
                 <label for="name">Name: </label>
@@ -47,7 +60,7 @@
             </div>
             <div class="status">
                 <label>Status: </label>
-                <select>
+                <select id="status" name="status">
                     <option>pick status from prefined list</option>
                     <option>Student</option>
                     <option>Teacher</option>
@@ -58,18 +71,7 @@
                 <button>Add event</button>
             </div>
         </fieldset>
-        <!--        nav-->
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Results</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Admin Site</a></li>
-            </ul>
-        </nav>
+		</form>
         <!--        footer-->
         <footer>
             <div class="about">
