@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2B</title>
+    <link rel="stylesheet" href="q2b.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <!--       header-->
+        <header>
+
+            <div class="user">
+                <p>User name displayed<p>
+            </div>
+            <div class="logo"><img src="img/logo.jpg" alt="walking club logo"></div>
+        </header>
+        <!--        fieldset-->
+        <fieldset>
+            <h1>Add Walking Event</h1>
+            <!--            hidden field-->
+            <div class="hidden">
+                <input id="prodId" name="prodId" type="hidden" value="12345678-09ab-1111-cdef">
+            </div>
+            <div class="form">
+                <label for="name">Name: </label>
+                <input id="name" name="name" type="text" placeholder="user name of event">
+            </div>
+            <div class="form">
+                <label>Date: <input type="date"></label>
+            </div>
+            <div class="form">
+                <label for="start_time">Start Time: </label>
+                <input id="start_time" name="start_time" type="text" placeholder="HH:MM">
+            </div>
+            <div class="form">
+                <label for="meeting_point">Meeting Point: </label>
+                <input id="meeting_point" name="meeting_point" type="text" placeholder="please insert a meeting point">
+            </div>
+            <div class="textarea">
+                <label>Notes: </label>
+                <textarea name="notes" rows="12" cols="50" placeholder="enter text for notes here"></textarea>
+            </div>
+            <div class="status">
+                <label>Status: </label>
+                <select>
+                    <option>pick status from prefined list</option>
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Outside person</option>
+                </select>
+            </div>
+            <div class="add">
+                <button>Add event</button>
+            </div>
+        </fieldset>
+        <!--        nav-->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Admin Site</a></li>
+            </ul>
+        </nav>
+        <!--        footer-->
+        <footer>
+            <div class="about">
+                <h2>About us</h2>
+                <div class="club"><img src="img/logo.jpg" alt="club logo"></div>
+            </div>
+            <div class="links">
+                <h2>Useful links</h2>
+                <a href="#">Links menu</a>
+            </div>
+        </footer>
+    </div>
+</body></html>
